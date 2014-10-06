@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,13 +18,17 @@
         <activity
             android:name="com.qianfeng.test.TestActivity"
             android:label="@string/title_activity_test" >
-             <intent-filter>
+        </activity>
+        <activity
+            android:name="com.qianfeng.neihan.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar" >
+              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
     </application>
 
 </manifest>

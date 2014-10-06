@@ -8,9 +8,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TestActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/testbutton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/testbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/testbutton1"
+        android:layout_below="@+id/testbutton1"
+        android:layout_marginTop="83dp"
+        android:text="pinglun" />
 
 </RelativeLayout>

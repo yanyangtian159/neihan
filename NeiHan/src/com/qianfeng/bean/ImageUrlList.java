@@ -17,7 +17,7 @@ public class ImageUrlList {
 	private int height;
 	public void parseJson(JSONObject json) throws JSONException{
 		largeImageUrls = pathImageUrlList(json);
-		Log.i("ImageUrlList", "---------------largeImageUrls---"+largeImageUrls.toString());
+		//Log.i("ImageUrlList", "---------------largeImageUrls---"+largeImageUrls.toString());
 		uri = json.getString("uri");
 		width = json.getInt("width");
 		height = json.getInt("height");
